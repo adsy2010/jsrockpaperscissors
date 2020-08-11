@@ -1,2 +1,4 @@
 @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+body { font-family: 'Red Rose', cursive; }
 #results { height: 250px; max-height: 250px; overflow-y: scroll; }
