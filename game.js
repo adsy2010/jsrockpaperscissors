@@ -32,7 +32,7 @@ function play(move)
             result = (computerPlays === PAPER) ? WON : (computerPlays === SCISSORS) ? DRAW : LOST;
             break;
     }
-    let line = `You played ${move}. Computer played ${computerPlays}. Result: ${result} <br>`;
+    let line = `${getTime()} --- You played ${move}. Computer played ${computerPlays}. Result: ${result} <br>`;
     document.getElementById('results').insertAdjacentHTML('afterbegin', line);
     score(result);
 }
@@ -56,3 +56,10 @@ function winRate()
     }
     else return 0;
 }
+
+function getTime() {
+    let today = new Date();
+    return today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+}
+
+score(); //populates the score with 0
